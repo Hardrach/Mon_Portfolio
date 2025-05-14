@@ -2,15 +2,21 @@ import React from 'react';
 import './Hero.css';
 
 const Hero = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="hero-section">
       <div className="hero-text">
         <h1>
-          Hi There,<br />
-          I'm <span className="highlight">Yassine <span className="color">Rachid</span></span>
+          Bonjour,<br />
+          Je suis <span className="highlight">Yassine <span className="color">Rachid</span></span>
         </h1>
-        <p>I Am Into <span className="color">Web Develop</span></p>
-        <button className="about-btn">About Me</button>
+        <p>Développeur Web passionné</p>
+        <button className="about-btn" onClick={() => scrollToSection('about')}>À propos de moi</button>
         <div className="Hero-socials">
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-link linkedin">
             <i className="fab fa-linkedin-in"></i>

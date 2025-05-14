@@ -7,7 +7,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Particles from './components/Particles';
 import CursorTrail from './components/CursorTrail';
-import AnimatedText from './components/AnimatedText';
 import Hero from './components/Hero';
 
 function App() {
@@ -66,7 +65,7 @@ function App() {
       <CursorTrail />
       <Header />
       <main>
-        <section className="parallax-section" data-speed="0.3">
+        <section id="home" className="parallax-section" data-speed="0.3">
           <Hero />
         </section>
         <section className="parallax-section" data-speed="0.3">

@@ -20,7 +20,7 @@ const Header = () => {
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        onClick={() => scrollToSection('about')}
+        onClick={() => scrollToSection('home')}
       >
         <h1>Portfolio</h1>
       </motion.div>
@@ -41,6 +41,7 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
+          <li onClick={() => scrollToSection('home')}>Accueil</li>
           <li onClick={() => scrollToSection('about')}>À propos</li>
           <li onClick={() => scrollToSection('skills')}>Compétences</li>
           <li onClick={() => scrollToSection('projects')}>Projets</li>
