@@ -1,3 +1,7 @@
+/* Nettoyage : on garde uniquement les variantes spécifiques, le reste est centralisé dans App.css ou global.css */
+
+/* Si besoin, tu peux ajouter ici des variantes propres à Hero, sinon laisse ce fichier vide ou supprime-le. */
+
 .hero-section {
   display: flex;
   align-items: center;
